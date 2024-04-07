@@ -136,8 +136,20 @@ span.it{
   box-shadow: 0 0 2px 1px #007bff;
 }
 
+.project {
+  display: flex;
+  text-decoration: underline;
+  text-transform: uppercase;
+  font-size: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
 a {
-  font-size: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
   color: #f9fafc;
   text-decoration: none;
 }
