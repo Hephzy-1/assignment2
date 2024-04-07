@@ -7,24 +7,42 @@
 
   <link rel="stylesheet" href="styles/style.css">
 </head>
-<body>
-  <div class="calculator">
-    <div class="text">Output</div>
-    <button class="child dark-grey">+</button>
-    <button class="child dark-grey">-</button>
-    <button class="child blue">*</button>
-    <button class="child light-grey">1</button>
-    <button class="child light-grey">2</button>
-    <button class="child blue">/</button>
-    <button class="child light-grey">3</button>
-    <button class="child light-grey">4</button>
-    <button class="child blue">%</button>
-    <button class="child light-grey">5</button>
-    <button class="child light-grey">6</button>
-    <button class="child light-grey">7</button>
-    <button class="child light-grey">8</button>
-    <button class="child light-grey">9</button>
-    <button class="child light-grey">0</button>
-  </div>
-</body>
+
+	<body>
+		<div id="container">
+			<div id="calculator">
+				<div id="result">
+					<div id="history">
+						<p id="history-value"></p>
+					</div>
+					<div id="output">
+						<p id="output-value"></p>
+					</div>
+				</div>
+				<div id="keyboard">
+					<button class="operator" id="clear">C</button>
+					<button class="operator" id="backspace">CE</button>
+					<button class="operator" id="%">%</button>
+					<button class="operator" id="/">&#247;</button>
+					<button class="number" id="7">7</button>
+					<button class="number" id="8">8</button>
+					<button class="number" id="9">9</button>
+					<button class="operator" id="*">&times;</button>
+					<button class="number" id="4">4</button>
+					<button class="number" id="5">5</button>
+					<button class="number" id="6">6</button>
+					<button class="operator" id="-">-</button>
+					<button class="number" id="1">1</button>
+					<button class="number" id="2">2</button>
+					<button class="number" id="3">3</button>
+					<button class="operator" id="+">+</button>
+					<button class="empty" id="empty"></button>
+					<button class="number" id="0">0</button>
+					<button class="empty" id="empty"></button>
+					<button class="operator" id="=">=</button>
+				</div>
+			</div>
+		</div>
+		<script src="JS/script.js"></script>
+	</body>
 </html>
