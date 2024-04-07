@@ -24,7 +24,7 @@ article, section, div {
 }
 
 section h2, article h2 {
-  font-size: 50px;
+  font-size: 45px;
   text-decoration: underline;
 }
 
@@ -44,286 +44,126 @@ ul, ol {
 } 
 
 .edu {
-  display: grid;
-  justify-items: start;
-  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.edu div {
+  flex-basis: 48%;
+}
+
+span.bold {
+  font-weight: 600;
 }
 
 span.it{
   font-style: italic;
 }
 
-
-/* 
-.body {
-  font-size: 2rem;
-  font-family: "poppins", sans-serif;
+.space {
+  margin-bottom: 80px;
 }
 
-.first {
-  position: relative;
-  top: 200px;
-  left: -150px;
-}
-
-.second {
-  position: relative;
-  top: 130px;
-  left: -150px;
-}
-
-
-
-.job-experience {
-  position: relative;
-  left: 500px;
-  bottom: 100px;
-  font-family: "poppins", sans-serif;
-  font-size: 3rem;
-  display: inline-block;
-}
-
-.experience {
-  position: relative;
-  bottom: 100px;
-  left: 700px;
-}
-
-.hobbies {
-  position: relative;
-  left: 500px;
-}
-
-.part-three {
+.end {
   display: flex;
-  justify-content: center;
-  position: relative;
-  top: 350px;
-  left: -160px;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
-.other {
-  position: relative;
-  left: 550px;
-  width: 400px;
-  top: -50px;
+.end div {
+  flex-basis: 48%;
 }
 
-.goals {
-  width: 900px;
+.contact label {
+  font-size: 20px;
+  margin-bottom: 15px;
 }
 
-.part-three > .problem {
-  position: relative;
-  top: 50px;
-  left: -60px;
-}
-
-.part-three > .goals {
-  position: relative;
-  top: -100px;
-  left: 950px;
-}
-
-.improve {
-  position: relative;
-  top: 50px;
-}
-
-.part-four > h2 {
-  font-family: "poppins", sans-serif;
-  font-size: 3rem;
-  position: relative;
-  top: 470px;
-  left: 100px;
-}
-
-form {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  font-family: "poppins", sans-serif;
-  font-size: 2rem;
-  width: 70%;
-  margin: 0 auto;
-  position: relative;
-  top: 500px;
-  left: -350px;
-}
-
-label {
-  display: block;
+.form-group {
   margin-bottom: 1rem;
 }
 
-input[type="text"],
-textarea,
-select {
+.form-group input,
+.form-group textarea {
   width: 100%;
-  padding: 0.8rem;
-  margin-bottom: 1rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 0.25rem;
   border: 1px solid #ccc;
-  border-radius: 4px;
   box-sizing: border-box;
-  font-size: 1.6rem;
-  font-family: "poppins", sans-serif;
+  background-color: #fff;
 }
 
-textarea {
-  height: 150px;
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  box-shadow: 0 0 2px 1px #e0e4e9;
 }
 
-input[type="submit"] {
-  background-color: #247ba0;
+.form-group select {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  background-color: #fff;
+  color: #000;
+}
+
+.submit {
+  width: 14vw;
+  margin-left: 10rem;
+  background-color: #e5eef1;
   color: #fff;
   border: none;
-  padding: 1rem 2rem;
+  border-radius: 0.25rem;
+  padding: 15px 10px;
   font-size: 1.6rem;
   cursor: pointer;
-  border-radius: 4px;
-  margin-top: 30px;
-  font-family: "poppins", sans-serif;
+  box-sizing: border-box;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
 }
 
-input[type="submit"]:hover {
-  background-color: #1b556e;
+.submit:hover {
+  background-color: #3282b8;
 }
 
-option {
-  font-size: 1.6rem;
+.submit:focus {
+  outline: none;
+  box-shadow: 0 0 2px 1px #007bff;
 }
 
 a {
-  position: relative;
-  left: 105px;
-  top: 550px;
-  font-size: 2rem;
-  font-family: "poppins", sans-serif;
-  color: whitesmoke;
+  font-size: 2em;
+  color: #f9fafc;
+  text-decoration: none;
+}
+
+a :visited {
+  color: #f9fafc;
 }
 
 /* Responsive styles optimized specifically for phones */
-/* @media (max-width: 1200px) {
-  .part-one {
-    flex-direction: column;
+
+@media (max-width: 900px) {
+  
+  * {
+    margin: 0;
   }
 
   h1 {
-    position: relative;
-    left: 600px;
+    font-size: 4em;
+    margin-left: 60px;
   }
-
+  
   .summary {
-    position: relative;
-    top: -30px;
-    left: 600px;
-  }
+      left: 50px;
+    }
 
-  .first {
-    position: relative;
-    top: -50px;
-    left: 600px;
-    width: 900px;
+  .part-one {
+      width: 700px;
+    }
   }
-
-  .education {
-    position: relative;
-    top: -50px;
-    left: 900px;
-    width: 900px;
-  }
-
-  .second {
-    position: relative;
-    top: -50px;
-    left: 600px;
-    width: 900px;
-  }
-
-  .body .part-two {
-    flex-direction: column;
-  }
-
-  .experience {
-    position: relative;
-    top: -350px;
-    left: 2000px;
-    text-align: center;
-  }
-
-  .one > ul {
-    position: relative;
-    top: -150px;
-    left: 1300px;
-    width: 900px;
-    display: inline-block;
-    white-space: nowrap;
-    text-align: center;
-  }
-  .hobbies {
-    position: relative;
-    top: 950px;
-    left: 800px;
-  }
-  .two > ul {
-    position: relative;
-    top: 1100px;
-    left: 470px;
-    white-space: nowrap;
-    text-align: center;
-  }
-
-  .two ul li {
-    margin-bottom: -50px;
-  }
-  .part-three {
-    flex-direction: column;
-  }
-
-  .other {
-    position: relative;
-    top: 600px;
-    left: 750px;
-  }
-  .part-three > .problem {
-    position: relative;
-    top: 600px;
-    left: 600px;
-    white-space: nowrap;
-    margin-bottom: -50px;
-  }
-  .problem ul li {
-    margin-bottom: 50px;
-  }
-
-  .part-three > .goals {
-    position: relative;
-    top: 600px;
-    left: 670px;
-  }
-  .improve {
-    position: relative;
-    top: 600px;
-    left: 600px;
-    width: 700px;
-    display: block;
-  }
-
-  .part-four {
-    flex-direction: column;
-  }
-  .title > h2 {
-    position: relative;
-    top: 950px;
-    left: 600px;
-  }
-  form {
-    position: relative;
-    top: 950px;
-    left: 400px;
-    width: 700px;
-  }
-  input[type="submit"] {
-    margin-bottom: 200px;
-  }
-} */ 
