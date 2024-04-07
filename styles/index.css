@@ -1,48 +1,60 @@
 * {
-  background-color: #ffffb5;
-  /* background: linear-gradient(315deg, #46462fbb 0%, #96703f6b 74%); */
-  /* height: 300vh; */
-  background-size: cover;
+  color: #fff;
+  background: #86B1EE;
   background-attachment: fixed;
   font-family: "poppins", sans-serif; 
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-size: 5em;
+  text-align: center;
+  text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3),
+    0px -4px 10px rgba(255, 255, 255, 0.3);
+  padding: 20px;
+}
+
+article, section, div {
+  display: grid;
+  align-items: center;
+  margin: 10px;
+  padding: 20px;
+  position: relative;
+}
+
+section h2, article h2 {
+  font-size: 50px;
+  text-decoration: underline;
+}
+
+.summary {
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+p, li {
+  font-size: 18px;
+}
+
+ul, ol {
+  list-style: none;
+} 
+
+.edu {
+  display: grid;
+  justify-items: start;
+  align-items: center;
 }
 
 span.it{
   font-style: italic;
 }
 
-/* h1 {
-  font-size: 5em;
-  
-  text-align: center;
-  color: #ffffff;
 
-  text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3),
-    0px -4px 10px rgba(255, 255, 255, 0.3);
-}
-
-.part-one {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.summary {
-  position: relative;
-  left: 500px;
-  bottom: 100px;
-  font-family: "poppins", sans-serif;
-  font-size: 3rem;
-}
-
-.education {
-  position: relative;
-  left: 400px;
-  bottom: 100px;
-  font-family: "poppins", sans-serif;
-  font-size: 3rem;
-}
-
+/* 
 .body {
   font-size: 2rem;
   font-family: "poppins", sans-serif;
@@ -60,13 +72,7 @@ span.it{
   left: -150px;
 }
 
-.part-two {
-  display: flex;
-  justify-content: center;
-  position: relative;
-  top: 300px;
-  left: -650px;
-}
+
 
 .job-experience {
   position: relative;
